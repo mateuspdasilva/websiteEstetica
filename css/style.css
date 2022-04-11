@@ -1,0 +1,924 @@
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    font-size: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    background: #E9E9E9;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color:black;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+
+#logo {
+    font-family: 'Poiret One', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5vh;
+}
+
+#header{
+    box-sizing: border-box;
+    height: 70px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(90deg, #A47A1E 0.39%, #D3A84C 18.23%, #D3A84C 37.45%, #E6BE69 58%, #FFD87C 77.67%, #B58F3E 100%);
+}
+
+#menu{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#nav{
+    margin-right: -8vh;
+}
+
+#menu .text{
+    font-size: 20px;
+    display: block;
+    padding: 10px;
+    color:  #2e2e2e;
+    transition: .6s;
+}
+
+#menu .text:hover{
+    color: #ffffff;
+}
+
+#menu h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 10px;
+    display: block;
+    align-items: center;
+    color:  #2e2e2e;
+}
+
+
+#social{
+    visibility: hidden;
+}
+
+#btn-mobile{
+    display: none;
+}
+
+#perfil-brenda{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.356);
+}
+
+#perfil-brenda img{
+    display: inline-flex;
+    margin: 40px;
+    max-height: 498.8px;
+    width: 200px;
+    border-radius: 1000px;
+}
+
+#perfil-brenda .perfil-brenda-txt p{
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 40px;
+    display: inline-flex;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-weight: normal;
+    font-size: 22px;
+    color:  #2e2e2e;
+}
+
+#perfil-brenda .perfil-brenda-txt h3{
+    margin-top: 40px;
+    margin-right: 135px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-size: 36px;
+    color:  #000000;
+}
+
+
+#perfil-brenda .main-socials{
+    display: flex;
+    flex-direction: column;
+    background-color: #c0c6c8;
+    margin-right: 20px;
+    border-radius: 10px;
+    transition: .5s;
+}
+
+#perfil-brenda .main-socials:hover{
+    background-color: #E6BE69;
+}
+
+#perfil-brenda .main-socials a{
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    margin: 10px;
+    transition: .6s;
+}
+
+#perfil-brenda .main-socials a:hover{
+    color: #ffffff;
+}
+
+#mobile-socials{
+    display: none;
+}
+
+#title-1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    color:  #2e2e2e;
+}
+
+#carrosel{
+    position: relative;  
+    height: 480px;
+    display: flex;
+    align-items: center;
+}
+  
+.swiper{
+    max-width: 1250px;
+    height: fit-content;
+}
+ 
+  
+.card{
+    position: relative;
+    background:#c0c6c8;
+    border-radius: 20px;
+    min-width: 400px;
+    height: 450px;
+}
+
+.card:hover{
+    transition: .5s;
+    background-color: #E6BE69;
+}
+  
+  
+#carrosel .card .img img{
+    height: 274px;
+    width: 400px;
+    border-radius: 20px;
+    border: 10px solid transparent;
+}
+
+#carrosel .card .txt h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    font-weight: bolder;
+    color:rgb(61, 61, 61);
+    margin-bottom: 20px;
+}
+
+#carrosel .card .txt li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: normal;
+    color: rgb(61, 61, 61);
+}
+
+#carrosel .swiper-button-next{
+    color:  #2e2e2e;
+}
+
+#carrosel .swiper-button-prev{
+    color:  #2e2e2e;
+}
+
+#mobile-cards{
+    display: none;
+}
+
+#atendimento-personalizado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 0.5px solid rgba(100, 100, 100, 0.356);
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.356);   
+}
+
+#atendimento-personalizado .atendimento-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.atendimento-content h2{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    margin: 20px;
+    color: #2e2e2e;
+}
+
+ .atendimento-content p{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.atendimento-content .last-p{
+    margin-bottom: 40px;
+}
+
+#agendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#agendamento h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    margin: 20px;
+    color: #2e2e2e;
+}
+
+#agendamento .formulario{
+    background-color: #c0c6c8;
+    border:  0.5px solid rgba(100, 100, 100, 0.356);
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.form{
+    width: 100%;
+    min-width: 512px;
+    font-size: 1.125rem;
+}
+
+.form label,
+.form input,
+.form textarea{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form label{
+    color: rgb(61, 61, 61);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.form input,
+.form textarea{
+    min-width: 492px;
+    min-height: 60px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+
+.form textarea{
+    display: block;
+    min-width: 492px;
+    min-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    resize: vertical;
+}
+
+.form input:hover,
+.form input:focus,
+.form textarea:hover,
+.form textarea:focus{
+    outline: none;
+    border-color: #E6BE69;
+    box-shadow: 0 0 0 3px #E6BE69;
+}
+
+.form button {
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    background: #E6BE69;
+    min-height: 40px;
+    min-width: 100px;
+    color: rgb(61, 61, 61);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    border: 0.5px solid rgba(100, 100, 100, 0.356);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.form button:hover,
+.form button:focus{
+    outline: none;
+    background: #e6ca8f;
+}
+
+#agendamento h3{
+    font-size: 22px;
+    color: rgb(61, 61, 61);
+}
+
+#agendamento .wpp{
+    display: flex;
+    justify-content:center;
+}
+
+
+#agendamento .wpp .btn{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 350px;
+    height:100px;
+    border-radius: 10px;
+    border: 00.5px solid rgba(100, 100, 100, 0.356);
+    background: #25d366;
+    margin-top: 40px;
+    margin-bottom: 40px;    
+    cursor: pointer;
+    transition: .6s;
+}
+
+#agendamento .wpp .btn:hover{
+    background: #3eff85;
+}
+
+#agendamento .wpp .btn p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#agendamento .wpp .btn i{
+    color: #ffffff;
+    font-size: 48px;
+    margin-right: 10px;
+}
+
+
+#footer{
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: fit-content;
+    background: #c0c6c8;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .footer-logo{
+    margin-top: 20px;
+}
+
+#footer .footer-logo a{
+    font-family: 'Poiret One', cursive;
+    font-size: 42px;
+    font-weight: bold;
+    color: white;
+    margin-left: 5vh;
+}    
+
+#footer .footer-menu {
+    margin-top: 20px;
+}
+
+#footer .footer-menu h2{
+    font-size: 24px;
+    color: rgb(61, 61, 61);
+    margin-bottom: 20px;
+}
+
+#footer .footer-menu ul li{
+    list-style-type: none;
+}
+
+#footer .footer-menu .footer-menu-text{
+    display: flex;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    transition: .6s;
+}
+
+#footer .footer-menu .footer-menu-text:hover{
+    color: #ffffff;
+}
+
+#footer .footer-contato{
+    margin-top: 20px;
+}
+
+#footer .footer-contato h2{
+    font-size: 24px;
+    color: rgb(61, 61, 61);
+    margin-bottom: 20px;
+}
+
+#footer .footer-contato ul li{
+    list-style-type: none;
+}
+
+#footer .footer-contato .footer-contato-text{
+    display: flex;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+    transition: .6s;
+}
+
+#footer .footer-contato .footer-contato-text:hover{
+    color: #ffffff;
+}
+
+#footer .footer-socials{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-right: 5vh;
+}
+
+#footer .footer-socials a{ 
+    font-size: 32px;
+    color: rgb(61, 61, 61);    
+    margin: 10px;
+    transition: .6s;
+}
+
+#footer .footer-socials a:hover{
+    color: #ffffff;
+}
+
+#creditos{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background: #c0c6c8;
+}
+
+#creditos a{
+    font-size: 14px;
+    color: rgb(61, 61, 61);
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+@media (max-width: 1100px){
+
+
+#logo{
+    font-family: 'Poiret One', cursive;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    margin-left: 3vh;
+}
+
+#perfil-brenda .perfil-brenda-txt h3{
+    margin-top: 3vh;
+    margin-right: 80px;
+    margin-bottom: 3vh;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-size: 28px;
+    color: #000000;
+}
+
+#footer{
+    width: 100%;
+    height: auto;
+    background: #c0c6c8;    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#footer .footer-logo{
+    margin-bottom: 30px;
+}
+
+#footer .footer-logo a{
+    font-size: 36px;
+    margin-left: 0;
+}
+
+#footer .footer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.356) ;
+}
+
+#footer .footer-menu ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+#footer .footer-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.356);
+}
+
+#footer .footer-contato .footer-contato-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+#footer .footer-socials{
+    display: flex;
+    flex-direction: row;
+    margin-right: 0;
+}
+
+
+}
+
+
+
+
+
+@media (max-width: 800px){
+
+
+body{
+    overflow-x: hidden;
+}
+
+#logo{
+    font-size: 28px;
+}
+
+#btn-mobile{
+    display: block;
+}
+
+#nav{
+    margin-right: 1vh;
+}
+
+#menu{
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 70px;
+    right: 0px;
+    background: #e7e7e7;
+    transition: 1s;
+    z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
+}
+
+#nav.active #menu{
+    height: 250px;
+    border-bottom: 0.5px solid rgba(100, 100, 100, 0.356);
+    visibility: visible;
+    overflow-y: auto;
+}  
+    
+#menu h2{
+    display: none;
+}
+
+#menu .text{
+    font-size: 18px;
+    font-weight: lighter;
+    color: rgb(61, 61, 61);
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 0.05px solid rgba(0, 0, 0, 05);
+}
+
+#social{
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1rem 0;
+}
+
+#socials{
+    font-size: 32px;
+    color: rgb(61, 61, 61);
+    display: flex;
+    flex-direction: row;
+    padding: .5rem 0;
+}
+
+#btn-mobile{
+    color: #ffffff;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+#hamburguer{
+    display: block;
+    border-top: 3px solid;
+    width: 20px;
+}
+    
+#hamburguer::after, #hamburguer::before{
+    content: '';
+    display: block;
+    width: 20px;
+    border-top: 3px solid;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transform: .6s;
+}
+    
+#nav.active #hamburguer{
+    border-top-color: transparent;
+}
+
+#nav.active #hamburguer::before{
+    transform: rotate(135deg);
+}
+
+#nav.active #hamburguer::after{
+    transform: rotate(-135deg);
+    top: -7.5px;
+}
+
+
+#perfil-brenda img{
+    display: inline-flex;
+    margin-top: 1vh;
+    margin-right: 3vh;
+    margin-left: 4vh;
+    height: auto;
+    width: 100px;
+    border-radius: 100px;
+}
+
+#perfil-brenda .perfil-brenda-txt{
+    margin-top: 20px;
+}
+
+#perfil-brenda .perfil-brenda-txt p{
+    margin-top: 5px;
+    margin-left: 5px;
+    display: inline-flex;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 12px;
+    color:  #2e2e2e;
+}
+
+#perfil-brenda .perfil-brenda-txt h3{
+    margin-right: 50px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    font-family: 'Alex Brush', cursive;
+    font-weight: normal;
+    font-size: 16px;
+    color:  #000000;
+}
+
+
+#perfil-brenda .main-socials{
+    display: none;
+}
+
+
+#title-1 h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 24px;
+}  
+
+#carrosel{
+    display: none;
+}
+
+#mobile-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-card{
+    max-width: 300px;
+    min-height: 220px;
+    margin: 10px;
+    background: #c0c6c8;
+    backdrop-filter: blur( 60px );
+    -webkit-backdrop-filter: blur( 60px );
+    border-radius: 10px;
+}
+
+.mobile-card img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 300px;
+    border-radius: 15px;
+    border: 10px solid transparent;
+}
+
+.mobile-card h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #2e2e2e;
+}
+
+.mobile-card li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    font-size: 16px;
+    color: #2e2e2e;
+}
+
+.atendimento-content h2{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+
+.atendimento-content p{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+#agendamento{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#agendamento h2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #2e2e2e;
+}
+
+#agendamento h3{
+    font-size: 18px;
+    color: rgb(61, 61, 61);
+}
+
+.form{
+    width: 100%;
+    min-width: 280px;
+    font-size: 1.125rem;
+}
+  
+.form label,
+.form input,
+.form textarea{
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+  
+.form label{
+    color: rgb(61, 61, 61);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+  
+.form input,
+.form textarea{
+    min-width: 260px;
+    min-height: 50px;
+    font: inherit;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: border-color, box-shadow 0.2s;
+}
+  
+.form textarea{
+    display: block;
+    min-width: 260px;
+    min-height: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+    resize: vertical;
+}
+
+#agendamento .wpp{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 270px;
+    height:100px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+#agendamento .wpp .btn p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serifs;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+#agendamento .wpp a{
+    font-size: 36px;
+}
+
+
+}
+
+
